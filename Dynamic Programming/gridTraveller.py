@@ -15,7 +15,7 @@ if he takes down, it means he is reducing one row
 """
 
 
-def gridTraveller(m, n):
+def grid_traveller(m, n):
     # base case 1
     if m == 1 and n == 1:
         return 1
@@ -23,7 +23,7 @@ def gridTraveller(m, n):
     if m == 0 or n == 0:
         return 0
 
-    return gridTraveller(m - 1, n) + gridTraveller(m, n - 1)
+    return grid_traveller(m - 1, n) + grid_traveller(m, n - 1)
 
 
-print(gridTraveller(10, 10))
+print(grid_traveller(10, 10))
